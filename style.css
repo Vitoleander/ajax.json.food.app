@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --light: #388AB2;
+    --dark: #1D78A5;
+}
+body{
+    font-weight: 300;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+}
+.text{
+    opacity: 0.8;
+}
+.title{
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+    color: var(--dark);
+}
+
+.title2{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.container{
+    min-height: 100vh;
+}
+.wrapper{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #fff;
+    text-align: center;
+}
+.search{
+    margin: 2rem 0;
+}
+.search-box{
+    margin: 1.2rem 0;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+.search-input,
+.search-btn{
+    width: 60%;
+}
+.search-input{
+    padding: 0 1rem;
+    font-size: 1.1rem;
+    font-family: inherit;
+    outline: 0;
+    border: 1px solid var(--light);
+    color: var(--light);
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+.search-input::placeholder{
+    color: var(--light);
+}
+.search-btn{
+    width: 135px;
+    height: 55px;
+    font-size: 1.1rem;
+    background: var(--light);
+    color: #fff;
+    border: none;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    transition: all 0.4s linear;
+    cursor: pointer;
+}
+.search-btn:hover{
+    background: var(--dark);
+}
+.result{
+    margin-top: 4rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.result h2{
+    font-size: 2.5rem;
+}
+#meal{
+    margin: 2.4rem 0;
+}
+.meal-item{
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.79);
+    margin: 2rem 0;
+}
+.meal-img img{
+    width: 50%;
+    display: block;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.meal-name{
+    padding: 1.5rem 0.5rem;
+}
+.meal-name h3{
+    font-size: 1.4rem;
+}
+
+.notFound{
+    grid-template-columns: 1fr!important;
+    color: var(--dark);
+    font-size: 1.8rem;
+    font-weight: 600;
+    width: 100%;
+}
